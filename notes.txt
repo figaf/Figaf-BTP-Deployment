@@ -1,0 +1,11 @@
+cf login
+cf create-service postgresql-db trial figaf-db -c db.json
+
+#for BTP_MODE authentication
+cf create-service xsuaa application figaf-xsuaa -c xs-security.json
+
+#for integration with PI/PO agents
+cf create-service connectivity lite figaf-connectivity
+cf create-service destination lite figaf-destination
+
+cf push --vars-file vars.yml

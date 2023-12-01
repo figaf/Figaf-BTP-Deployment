@@ -1,0 +1,53 @@
+---
+applications:
+- name: ((ID))-app
+  env:
+    IRT_SERVER_PORT: '8080'
+    IRT_CONTAINER_PORT: '8080'
+    IRT_LOGON_MODE: 'BTP_MODE'
+    BTP_APP_ROUTER_URL: https://((ID)).((LANDSCAPE_APPS_DOMAIN))
+    IAS_XSUAA_XCHANGE_ENABLED: true
+    LOCATION_ID: ((LOCATION_ID))
+    LOGBACK_TOTAL_SIZE_CAP: ((LOGBACK_TOTAL_SIZE_CAP))
+    XMX_VALUE: ((XMX_VALUE))
+    ENABLE_INSTANCE_MONITORING: ((ENABLE_INSTANCE_MONITORING))
+  docker:
+    image: figaf/irt:((DOCKER_IMAGE_VERSION))
+  services:
+  # name of your PostgreSQL DB service
+  - figaf-db
+  - figaf-xsuaa
+#  - figaf-connectivity
+#  - figaf-destination
+  routes:
+  - route: ((ID))-internal.((LANDSCAPE_APPS_DOMAIN))
+  processes:
+  - type: web
+    instances: 1
+    memory: 2048M #Adjust XMX_VALUE in the vars.yml when changing this parameter
+    disk_quota: 4096M
+    health-check-type: process
+
+# Application Router as web server
+- name: ((ID))-router
+  path: approuter
+  buildpacks:
+    - nodejs_buildpack
+  memory: 128M
+  routes:
+    - route: ((ID)).((LANDSCAPE_APPS_DOMAIN))
+  services:
+    - figaf-xsuaa
+  env:
+    destinations: >
+      [
+        {"name":"token-destination",
+         "url":"https://((ID))-internal.((LANDSCAPE_APPS_DOMAIN))",
+         "forwardAuthToken": true,
+         "timeout": 3600000
+         }
+      ]
+    httpHeaders: >
+      [
+        {"pragma":"no-cache"}
+      ]

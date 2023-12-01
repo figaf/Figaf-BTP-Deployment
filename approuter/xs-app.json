@@ -1,0 +1,27 @@
+{
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/#/login"
+  },
+  "routes": [
+    {
+      "source": "^.*\\.(?:html|xml|js|png|svg|json|properties|css|woff|woff2|ttf)$",
+      "destination": "token-destination",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
+      "source": "^(?:/irt)?/(?:health|login|restart|oauth/.+|v2/api-docs|swagger-resources/.+|webjars/.+|api/public/configuration/features|actuator/hawtio|actuator/loggers|tokens/revoke|api/v1/.+|api/cpi-testing-mock-data/step/.+|api/idp/sign-saml-response/.+).*",
+      "destination": "token-destination",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/",
+      "target": "/",
+      "destination": "token-destination",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    }
+  ]
+}

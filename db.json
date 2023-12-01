@@ -1,0 +1,16 @@
+{
+    "engine_version": "14",
+    "locale": "en_US",
+    "postgresql_extensions": [
+        "ltree",
+        "citext",
+        "pg_stat_statements",
+        "pgcrypto",
+        "fuzzystrmatch",
+        "hstore",
+        "btree_gist",
+        "btree_gin",
+        "pg_trgm",
+        "uuid-ossp"
+    ]
+}

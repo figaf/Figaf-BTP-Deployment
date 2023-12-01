@@ -1,0 +1,272 @@
+{
+  "xsappname": "figaf-xsuaa",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.ROLE_IRTAdmin"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTUser"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTConfigurator"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTOperator"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTManager"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTSensitivePayloadViewer"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTDevOpsOperator"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTDevOpsConfigurator"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTDevOpsManager"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTLandscapeManager"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTLicenseRequester"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTApplicationManager"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTAgentManager"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTUserManager"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTOAuthClientsManager"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "IRTAdmin",
+      "description": "User with that role has full access to the application functions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTAdmin"
+      ]
+    },
+    {
+      "name": "IRTUser",
+      "description": "User with that role can only browse pages and run tests. See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTUser"
+      ]
+    },
+    {
+      "name": "IRTConfigurator",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTConfigurator"
+      ]
+    },
+    {
+      "name": "IRTOperator",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTOperator"
+      ]
+    },
+    {
+      "name": "IRTManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTManager"
+      ]
+    },
+    {
+      "name": "IRTSensitivePayloadViewer",
+      "description": "Additional user role, should be used with administrator or/and any standard role. IRTSensitivePayloadViewer role allows user to configure confidential and secured agents and view original payloads of confidential messages.",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTSensitivePayloadViewer"
+      ]
+    },
+    {
+      "name": "IRTDevOpsOperator",
+      "description": "User with this role can work with tickets, releases, and transports",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTDevOpsOperator"
+      ]
+    },
+    {
+      "name": "IRTDevOpsConfigurator",
+      "description": "Allows to modify transport configuration",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTDevOpsConfigurator"
+      ]
+    },
+    {
+      "name": "IRTDevOpsManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTDevOpsManager"
+      ]
+    },
+    {
+      "name": "IRTLandscapeManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTLandscapeManager"
+      ]
+    },
+    {
+      "name": "IRTLicenseRequester",
+      "description": "User with that role is able to request new licenses for the objects (except possibility to change credentials of root administrator)",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTLicenseRequester"
+      ]
+    },
+    {
+      "name": "IRTApplicationManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTApplicationManager"
+      ]
+    },
+    {
+      "name": "IRTAgentManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTAgentManager"
+      ]
+    },
+    {
+      "name": "IRTUserManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTUserManager"
+      ]
+    },
+    {
+      "name": "IRTOAuthClientsManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTOAuthClientsManager"
+      ]
+    }
+  ],
+  "role-collections": [
+    {
+      "name": "IRTAdmin",
+      "description": "User with that role has full access to the application functions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTAdmin"
+      ]
+    },
+    {
+      "name": "IRTUser",
+      "description": "User with that role can only browse pages and run tests. See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTUser"
+      ]
+    },
+    {
+      "name": "IRTConfigurator",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTConfigurator"
+      ]
+    },
+    {
+      "name": "IRTOperator",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTOperator"
+      ]
+    },
+    {
+      "name": "IRTManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTManager"
+      ]
+    },
+    {
+      "name": "IRTSensitivePayloadViewer",
+      "description": "Additional user role, should be used with administrator or/and any standard role. IRTSensitivePayloadViewer role allows user to configure confidential and secured agents and view original payloads of confidential messages.",
+      "role-template-references": [
+        "$XSAPPNAME.IRTSensitivePayloadViewer"
+      ]
+    },
+    {
+      "name": "IRTDevOpsOperator",
+      "description": "User with this role can work with tickets, releases, and transports",
+      "role-template-references": [
+        "$XSAPPNAME.IRTDevOpsOperator"
+      ]
+    },
+    {
+      "name": "IRTDevOpsConfigurator",
+      "description": "Allows to modify transport configuration",
+      "role-template-references": [
+        "$XSAPPNAME.IRTDevOpsConfigurator"
+      ]
+    },
+    {
+      "name": "IRTDevOpsManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTDevOpsManager"
+      ]
+    },
+    {
+      "name": "IRTLandscapeManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTLandscapeManager"
+      ]
+    },
+    {
+      "name": "IRTLicenseRequester",
+      "description": "User with that role is able to request new licenses for the objects (except possibility to change credentials of root administrator)",
+      "role-template-references": [
+        "$XSAPPNAME.IRTLicenseRequester"
+      ]
+    },
+    {
+      "name": "IRTApplicationManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTApplicationManager"
+      ]
+    },
+    {
+      "name": "IRTAgentManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTAgentManager"
+      ]
+    },
+    {
+      "name": "IRTUserManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTUserManager"
+      ]
+    },
+    {
+      "name": "IRTOAuthClientsManager",
+      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTOAuthClientsManager"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+    "token-validity": 60000,
+    "refresh-token-validity": 120000,
+    "redirect-uris":[
+      "https://**.hana.ondemand.com/**"
+    ]
+  }
+}
