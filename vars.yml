@@ -1,13 +1,25 @@
-# use the name of your company or anything else instead of <your-company> prefix. Avoid using underscore and special symbols in the name.
+# Use the name of your company or anything else instead of <your-company> prefix. Avoid using underscore and special symbols in the name.
 ID: <your-company>-figaf
 
-#Use 'cf domains' command to fetch a value for LANDSCAPE_APPS_DOMAIN. It should be in cfapps.xxxxx.hana.ondemand.com format.
+# Use 'cf domains' command to fetch a value for LANDSCAPE_APPS_DOMAIN. It should be in cfapps.xxxxx.hana.ondemand.com format.
 LANDSCAPE_APPS_DOMAIN: cfapps.us10.hana.ondemand.com
+
 # You can find the latest version here: https://hub.docker.com/r/figaf/irt/tags?page=1&name=btp.
+# Please do not use snapshot versions (they have SNAPSHOT in the name) if they are not provided for you directly from Figaf team (it is very rare practice, but possible to deliver a quick hotfix).
 # Use just a version number (e.g. 2210.3-btp) without figaf/irt:
 DOCKER_IMAGE_VERSION:
+
+# Must be configured properly for integration with PI system through a Cloud connection.
+# See more details about cloud connector configuration here:
+# https://blogs.sap.com/2021/09/05/installation-and-configuration-of-sap-cloud-connector
+# https://help.figaf.com/portal/en/kb/articles/how-to-use-pi-po-systems-in-sap-btp#Specific_services
 LOCATION_ID:
+
+# Max capacity of 'logs' folder
 LOGBACK_TOTAL_SIZE_CAP: 2GB
-XMX_VALUE: 2048M #Possible units: K, M, G, k, m, g
-# enables instance monitoring endpoint /instance-monitoring and adds Glowroot agent (see https://glowroot.org) to the instance
+
+# Max amount of memory that will be available for JVM. Possible units: K, M, G, k, m, g
+XMX_VALUE: 2048M
+
+# Enables instance monitoring endpoint /instance-monitoring and adds Glowroot agent (see https://glowroot.org) to the instance
 ENABLE_INSTANCE_MONITORING: true
