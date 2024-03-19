@@ -11,7 +11,7 @@
       "csrfProtection": false
     },
     {
-      "source": "^(?:/irt)?/(?:health|login|restart|oauth/.+|v2/api-docs|swagger-resources/.+|webjars/.+|api/public/configuration/features|actuator/hawtio|actuator/loggers|tokens/revoke|api/v1/.+|api/cpi-testing-mock-data/step/.+|api/idp/sign-saml-response/.+).*",
+      "source": "^(?:/irt)?/(?:health|login|restart|oauth/.+|v3/api-docs|v3/api-docs/.+|swagger-resources/.+|webjars/.+|api/public/configuration/features|actuator/hawtio|actuator/loggers|tokens/revoke|api/v1/.+|api/cpi-testing-mock-data/step/.+|api/idp/sign-saml-response/.+).*",
       "destination": "token-destination",
       "authenticationType": "none",
       "csrfProtection": false
