@@ -4,9 +4,9 @@ ID: <your-company>-figaf
 # Use 'cf domains' command to fetch a value for LANDSCAPE_APPS_DOMAIN. It should be in cfapps.xxxxx.hana.ondemand.com format.
 LANDSCAPE_APPS_DOMAIN: cfapps.us10.hana.ondemand.com
 
-# You can find the latest version here: https://hub.docker.com/r/figaf/irt/tags?page=1&name=btp.
+# You can find the latest version here: https://hub.docker.com/r/figaf/app/tags?page=1&name=btp.
 # Please do not use snapshot versions (they have SNAPSHOT in the name) if they are not provided for you directly from Figaf team (it is very rare practice, but possible to deliver a quick hotfix).
-# Use just a version number (e.g. 2210.3-btp) without figaf/irt:
+# Use just a version number (e.g. 2210.3-btp) without figaf/app:
 DOCKER_IMAGE_VERSION:
 
 # Must be configured properly for integration with PI system through a Cloud connection.
