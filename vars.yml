@@ -13,6 +13,7 @@ DOCKER_IMAGE_VERSION:
 # See more details about cloud connector configuration here:
 # https://blogs.sap.com/2021/09/05/installation-and-configuration-of-sap-cloud-connector
 # https://help.figaf.com/portal/en/kb/articles/how-to-use-pi-po-systems-in-sap-btp#Specific_services
+# It should be populated also to integrate with local smtp server if cloud connector is configured with a locationId
 LOCATION_ID:
 
 # Max capacity of 'logs' folder
@@ -23,3 +24,9 @@ XMX_VALUE: 2048M
 
 # Enables instance monitoring endpoint /instance-monitoring and adds Glowroot agent (see https://glowroot.org) to the instance
 ENABLE_INSTANCE_MONITORING: true
+
+#This configuration flag is used to specify whether the application should use a cloud connector for SMTP integration
+USE_CLOUD_CONNECTOR_FOR_SMTP_INTEGRATION: false
+
+#The configuration key specifies the name of a destination configured in the SAP BTP Destination service that contains the local SMTP server's host and port information.
+CLOUD_CONNECTOR_DESTINATION_NAME_FOR_SMTP_INTEGRATION:
