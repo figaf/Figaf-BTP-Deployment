@@ -26,7 +26,7 @@ applications:
   processes:
   - type: web
     instances: 1
-    memory: 2048M #Adjust XMX_VALUE in the vars.yml when changing this parameter
+    memory: 3700M #Adjust XMX_VALUE in the vars.yml when changing this parameter
     disk_quota: 4096M
     health-check-type: process
 
