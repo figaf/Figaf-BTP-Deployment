@@ -27,7 +27,7 @@ applications:
   - type: web
     instances: 1
     memory: 3700M #Adjust XMX_VALUE in the vars.yml when changing this parameter
-    disk_quota: 4096M
+    disk_quota: 10240M
     health-check-type: process
 
 # Application Router as web server
