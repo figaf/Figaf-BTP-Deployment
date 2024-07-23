@@ -46,7 +46,7 @@ applications:
         {"name":"token-destination",
          "url":"https://((ID))-internal.((LANDSCAPE_APPS_DOMAIN))",
          "forwardAuthToken": true,
-         "timeout": 3600000
+         "timeout": 86400000
          }
       ]
     httpHeaders: >
