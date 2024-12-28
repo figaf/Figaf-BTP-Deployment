@@ -30,6 +30,12 @@
       "name": "$XSAPPNAME.ROLE_IRTDevOpsManager"
     },
     {
+      "name": "$XSAPPNAME.ROLE_IRTSupportToolOperator"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTSupportToolManager"
+    },
+    {
       "name": "$XSAPPNAME.ROLE_IRTLandscapeManager"
     },
     {
@@ -58,28 +64,28 @@
     },
     {
       "name": "IRTUser",
-      "description": "User with that role can only browse pages and run tests. See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "User with that role can only browse pages and run tests. See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTUser"
       ]
     },
     {
       "name": "IRTConfigurator",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTConfigurator"
       ]
     },
     {
       "name": "IRTOperator",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTOperator"
       ]
     },
     {
       "name": "IRTManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTManager"
       ]
@@ -107,14 +113,28 @@
     },
     {
       "name": "IRTDevOpsManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTDevOpsManager"
       ]
     },
     {
+      "name": "IRTSupportToolOperator",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTSupportToolOperator"
+      ]
+    },
+    {
+      "name": "IRTSupportToolManager",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTSupportToolManager"
+      ]
+    },
+    {
       "name": "IRTLandscapeManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTLandscapeManager"
       ]
@@ -128,28 +148,28 @@
     },
     {
       "name": "IRTApplicationManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTApplicationManager"
       ]
     },
     {
       "name": "IRTAgentManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTAgentManager"
       ]
     },
     {
       "name": "IRTUserManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTUserManager"
       ]
     },
     {
       "name": "IRTOAuthClientsManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTOAuthClientsManager"
       ]
@@ -165,28 +185,28 @@
     },
     {
       "name": "IRTUser",
-      "description": "User with that role can only browse pages and run tests. See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "User with that role can only browse pages and run tests. See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTUser"
       ]
     },
     {
       "name": "IRTConfigurator",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTConfigurator"
       ]
     },
     {
       "name": "IRTOperator",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTOperator"
       ]
     },
     {
       "name": "IRTManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTManager"
       ]
@@ -214,14 +234,28 @@
     },
     {
       "name": "IRTDevOpsManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTDevOpsManager"
       ]
     },
     {
+      "name": "IRTSupportToolOperator",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTSupportToolOperator"
+      ]
+    },
+    {
+      "name": "IRTSupportToolManager",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTSupportToolManager"
+      ]
+    },
+    {
       "name": "IRTLandscapeManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTLandscapeManager"
       ]
@@ -235,28 +269,28 @@
     },
     {
       "name": "IRTApplicationManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTApplicationManager"
       ]
     },
     {
       "name": "IRTAgentManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTAgentManager"
       ]
     },
     {
       "name": "IRTUserManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTUserManager"
       ]
     },
     {
       "name": "IRTOAuthClientsManager",
-      "description": "See https://figaf.com/help/irt/latest/#irt-roles-and-permissions",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTOAuthClientsManager"
       ]
