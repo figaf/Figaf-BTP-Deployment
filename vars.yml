@@ -9,6 +9,10 @@ LANDSCAPE_APPS_DOMAIN: cfapps.us10.hana.ondemand.com
 # Use just a version number (e.g. 2210.3-btp) without figaf/app:
 DOCKER_IMAGE_VERSION:
 
+# Define username of your dockerhub account to do a pull operation on behalf of your user.
+# That helps to avoid the error 'You have reached your pull rate limit'.
+DOCKER_USERNAME:
+
 # Must be configured properly for integration with PI system through a Cloud connection.
 # See more details about cloud connector configuration here:
 # https://blogs.sap.com/2021/09/05/installation-and-configuration-of-sap-cloud-connector

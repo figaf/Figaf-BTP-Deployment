@@ -15,6 +15,7 @@ applications:
     CLOUD_CONNECTOR_DESTINATION_NAME_FOR_SMTP_INTEGRATION: ((CLOUD_CONNECTOR_DESTINATION_NAME_FOR_SMTP_INTEGRATION))
   docker:
     image: figaf/app:((DOCKER_IMAGE_VERSION))
+    username: ((DOCKER_USERNAME))
   services:
   # name of your PostgreSQL DB service
   - figaf-db
