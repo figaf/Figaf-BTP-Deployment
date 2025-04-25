@@ -3,6 +3,7 @@
   "logout": {
     "logoutEndpoint": "/#/login"
   },
+  "sessionTimeout": 60,
   "routes": [
     {
       "source": "^.*\\.(?:html|xml|js|png|svg|json|properties|css|woff|woff2|ttf)$",
