@@ -23,8 +23,12 @@ LOCATION_ID:
 # Max capacity of 'logs' folder
 LOGBACK_TOTAL_SIZE_CAP: 2GB
 
-# Max amount of memory that will be available for JVM. Possible units: K, M, G, k, m, g
-XMX_VALUE: 3700M
+# RAM allocated for the app. Possible units: K, M, G, k, m, g
+#INSTANCE_MEMORY: 3700M #use for a trial account
+INSTANCE_MEMORY: 4G
+
+# The percentage of the physical memory size that is used as the maximum heap size
+MAX_RAM_PERCENTAGE: 50
 
 # Enables instance monitoring endpoint /instance-monitoring and adds Glowroot agent (see https://glowroot.org) to the instance
 ENABLE_INSTANCE_MONITORING: true
