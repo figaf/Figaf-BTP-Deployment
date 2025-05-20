@@ -24,8 +24,8 @@ LOCATION_ID:
 LOGBACK_TOTAL_SIZE_CAP: 2GB
 
 # RAM allocated for the app. Possible units: K, M, G, k, m, g
-#INSTANCE_MEMORY: 3700M #use for a trial account
-INSTANCE_MEMORY: 4G
+INSTANCE_MEMORY: 3700M #for a trial account
+#INSTANCE_MEMORY: 4G #for a production account (4G is the minimum requirement, you can set more)
 
 # The percentage of the physical memory size that is used as the maximum heap size
 MAX_RAM_PERCENTAGE: 50
