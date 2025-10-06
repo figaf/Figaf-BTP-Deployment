@@ -5,6 +5,7 @@
     {
       "name": "$XSAPPNAME.ROLE_IRTAdmin"
     },
+
     {
       "name": "$XSAPPNAME.ROLE_IRTUser"
     },
