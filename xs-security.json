@@ -24,6 +24,9 @@
       "name": "$XSAPPNAME.ROLE_IRTDevOpsOperator"
     },
     {
+      "name": "$XSAPPNAME.ROLE_FigafMessageMonitoringOperator"
+    },
+    {
       "name": "$XSAPPNAME.ROLE_IRTDevOpsConfigurator"
     },
     {
@@ -102,6 +105,13 @@
       "description": "User with this role can work with tickets, releases, and transports",
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTDevOpsOperator"
+      ]
+    },
+    {
+      "name": "FigafMessageMonitoringOperator",
+      "description": "User with this role has access to message monitor filter (full access: metadata+payloads)",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_FigafMessageMonitoringOperator"
       ]
     },
     {
@@ -223,6 +233,13 @@
       "description": "User with this role can work with tickets, releases, and transports",
       "role-template-references": [
         "$XSAPPNAME.IRTDevOpsOperator"
+      ]
+    },
+    {
+      "name": "FigafMessageMonitoringOperator",
+      "description": "User with this role has access to message monitor filter (full access: metadata+payloads)",
+      "role-template-references": [
+        "$XSAPPNAME.FigafMessageMonitoringOperator"
       ]
     },
     {
