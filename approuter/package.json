@@ -1,10 +1,10 @@
 {
     "name": "approuter",
     "engines": {
-        "node": "20.x"
+        "node": "22.x"
     },
     "dependencies": {
-        "@sap/approuter": "^20.6.1"
+        "@sap/approuter": "^21.2.0"
     },
     "scripts": {
         "start": "node node_modules/@sap/approuter/approuter.js"
