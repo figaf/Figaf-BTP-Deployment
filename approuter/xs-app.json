@@ -18,6 +18,34 @@
       "csrfProtection": false
     },
     {
+      "source": "^/\\.well-known/(?:oauth-protected-resource|oauth-authorization-server)$",
+      "destination": "token-destination",
+      "authenticationType": "none",
+      "httpMethods": ["GET"],
+      "csrfProtection": false
+    },
+    {
+      "source": "^/connect/register$",
+      "destination": "token-destination",
+      "authenticationType": "none",
+      "httpMethods": ["POST"],
+      "csrfProtection": false
+    },
+    {
+      "source": "^/oauth2/(?:token|revoke)$",
+      "destination": "token-destination",
+      "authenticationType": "none",
+      "httpMethods": ["POST"],
+      "csrfProtection": false
+    },
+    {
+      "source": "^/api/mcp/?$",
+      "destination": "token-destination",
+      "authenticationType": "none",
+      "httpMethods": ["GET", "POST", "DELETE"],
+      "csrfProtection": false
+    },
+    {
       "source": "^/",
       "target": "/",
       "destination": "token-destination",

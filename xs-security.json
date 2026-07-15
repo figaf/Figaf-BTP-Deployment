@@ -55,6 +55,9 @@
     },
     {
       "name": "$XSAPPNAME.ROLE_IRTOAuthClientsManager"
+    },
+    {
+      "name": "$XSAPPNAME.ROLE_IRTMcpReader"
     }
   ],
   "role-templates": [
@@ -183,6 +186,13 @@
       "scope-references": [
         "$XSAPPNAME.ROLE_IRTOAuthClientsManager"
       ]
+    },
+    {
+      "name": "IRTMcpReader",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
+      "scope-references": [
+        "$XSAPPNAME.ROLE_IRTMcpReader"
+      ]
     }
   ],
   "role-collections": [
@@ -310,6 +320,13 @@
       "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
       "role-template-references": [
         "$XSAPPNAME.IRTOAuthClientsManager"
+      ]
+    },
+    {
+      "name": "IRTMcpReader",
+      "description": "See https://figaf.com/help/irt-doc/latest/configuration/user-management.html#irt-roles-and-permissions",
+      "role-template-references": [
+        "$XSAPPNAME.IRTMcpReader"
       ]
     }
   ],
