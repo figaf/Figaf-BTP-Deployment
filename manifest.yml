@@ -34,6 +34,7 @@ applications:
 # Application Router as web server
 - name: ((ID))-router
   path: approuter
+  stack: cflinuxfs5
   buildpacks:
     - nodejs_buildpack
   memory: 128M
@@ -47,11 +48,6 @@ applications:
         {"name":"token-destination",
          "url":"https://((ID))-internal.((LANDSCAPE_APPS_DOMAIN))",
          "forwardAuthToken": true,
-         "timeout": 86400000
-         },
-        {"name":"public-api-destination",
-         "url":"https://((ID))-internal.((LANDSCAPE_APPS_DOMAIN))",
-         "forwardAuthToken": false,
          "timeout": 86400000
          }
       ]
