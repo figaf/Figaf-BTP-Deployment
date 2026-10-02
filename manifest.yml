@@ -48,6 +48,11 @@ applications:
          "url":"https://((ID))-internal.((LANDSCAPE_APPS_DOMAIN))",
          "forwardAuthToken": true,
          "timeout": 86400000
+         },
+        {"name":"public-api-destination",
+         "url":"https://((ID))-internal.((LANDSCAPE_APPS_DOMAIN))",
+         "forwardAuthToken": false,
+         "timeout": 86400000
          }
       ]
     httpHeaders: >

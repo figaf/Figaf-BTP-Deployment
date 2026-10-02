@@ -6,13 +6,19 @@
   "sessionTimeout": 60,
   "routes": [
     {
+      "source": "^/(?:oauth/token|api/v1/.+)(?:\\?.*)?$",
+      "destination": "public-api-destination",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
       "source": "^.*\\.(?:html|xml|js|png|svg|json|properties|css|woff|woff2|ttf)$",
       "destination": "token-destination",
       "authenticationType": "none",
       "csrfProtection": false
     },
     {
-      "source": "^(?:/irt)?/(?:health|login|restart|oauth/.+|v3/api-docs|v3/api-docs/.+|swagger-resources/.+|webjars/.+|api/public/configuration/features|actuator/hawtio|actuator/loggers|tokens/revoke|api/v1/.+|api/cpi-testing-mock-data/step/.+|api/idp/sign-saml-response/.+|api/api-proxy/record-messages.+).*",
+      "source": "^(?:/irt)?/(?:health|login|restart|v3/api-docs|v3/api-docs/.+|swagger-resources/.+|webjars/.+|api/public/configuration/features|actuator/hawtio|actuator/loggers|tokens/revoke|api/cpi-testing-mock-data/step/.+|api/idp/sign-saml-response/.+|api/api-proxy/record-messages.+).*",
       "destination": "token-destination",
       "authenticationType": "none",
       "csrfProtection": false
